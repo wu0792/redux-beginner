@@ -15,7 +15,6 @@ const operVal = (state = {displayVal: 100}, action) => {
             return decVal(state.displayVal);
         default:
             return state;
-            //throw new Error(`unknown action.type:${action.type}`);
     }
 }
 

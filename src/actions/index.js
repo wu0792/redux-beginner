@@ -1,9 +1,7 @@
 export const incVal = (action) => ({
-    type: 'INC',
-    //val: action.val
+    type: 'INC'
 });
 
 export const decVal = (action) => ({
-    type: 'DEC',
-    //val: action.val
+    type: 'DEC'
 });
