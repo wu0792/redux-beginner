@@ -2,10 +2,10 @@ import {connect} from 'react-redux'
 import CounterList from '../components/CounterList'
 import {incCalcVal,decCalcVal} from '../actions'
 
-//这就是默认采用的映射机制
+//定义容器组件的属性
 const mapStateToProps = (state) => ({
     calcVal: state.calcVal,
-    count: state.calcVal.length
+    count: state.calcVal.length     //可以理解成只读属性
 })
 
 const mapDispatchToProps = ({

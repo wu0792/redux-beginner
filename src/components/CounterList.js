@@ -24,6 +24,7 @@ class CounterList extends Component {
             const theCalcVal = calcVal[i];
             const id = theCalcVal.id;
             const val = theCalcVal.val;
+            //手动创建React对象，指定类型和初始化属性
             let counter = React.createElement(Counter, {id: id,min: i, onClickDec: onClickDec,onClickInc:onClickInc, key: i, val: val });
             counterList.push(counter);
         }

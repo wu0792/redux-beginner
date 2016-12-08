@@ -4,7 +4,7 @@ import {addCounter,removeCounter} from '../actions'
 
 const mapStateToProps = (state) => ({
     count: state.calcVal.length,
-    removeBtnEnable: state.calcVal.length > 0
+    removeBtnEnable: state.calcVal.length > 0   //可以理解成只读属性
 })
 
 const mapDispatchToProps = ({

@@ -3,12 +3,13 @@ import React, { Component } from 'react';
 class Counter extends Component {
     render() {
         let {val, min} = this.props;
+        let max = min * min;
         return (
             <div>
-                value(min:{min}):
+                value(min:{min}, max:{max}):
                 <button disabled={val<=min} onClick={this.handleDecClick.bind(this)}>-</button>
                 {val}
-                <button onClick={this.handleIncClick.bind(this)}>+</button>
+                <button disabled={val>=max} onClick={this.handleIncClick.bind(this)}>+</button>
             </div>
         );
     }
