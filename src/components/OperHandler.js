@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 class OperHandler extends Component {
     render() {
-        let {count, onClickAddCounter, onClickRemoveCounter} = this.props;
+        let {count,removeBtnEnable, onClickAddCounter, onClickRemoveCounter} = this.props;
         return (
             <div>
-                <button onClick={onClickRemoveCounter}>REMOVE</button>
+                <button disabled={!removeBtnEnable} onClick={onClickRemoveCounter}>REMOVE</button>
                 <button onClick={onClickAddCounter}>ADD</button>
                 <label> have {count} counters:</label>
             </div>

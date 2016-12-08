@@ -2,12 +2,10 @@ import {INC_CALC_VAL,DEC_CALC_VAL,ADD_COUNTER,REMOVE_COUNTER} from '../generic/a
 
 //增加或减少计数器的值
 export const incCalcVal = function(id) {
-    //debugger;
     return {type: INC_CALC_VAL,id:id};
 };
 
 export const decCalcVal = function(id) {
-    //debugger;
     return {type: DEC_CALC_VAL,id:id};
 };
 

@@ -3,7 +3,8 @@ import OperHandler from '../components/OperHandler'
 import {addCounter,removeCounter} from '../actions'
 
 const mapStateToProps = (state) => ({
-    count: state.calcVal.length
+    count: state.calcVal.length,
+    removeBtnEnable: state.calcVal.length > 0
 })
 
 const mapDispatchToProps = ({

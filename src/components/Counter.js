@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
     render() {
-        let {val} = this.props;
+        let {val, min} = this.props;
         return (
             <div>
-                value:
-                <button onClick={this.handleDecClick.bind(this)}>-</button>
+                value(min:{min}):
+                <button disabled={val<=min} onClick={this.handleDecClick.bind(this)}>-</button>
                 {val}
                 <button onClick={this.handleIncClick.bind(this)}>+</button>
             </div>

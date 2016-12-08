@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CounterWrapper from '../containers/CounterWrapper';
+import CounterListWrapper from '../containers/CounterListWrapper';
 import OperHandler from '../containers/OperHandlerWrapper';
 
 class App extends Component {
@@ -8,11 +8,10 @@ class App extends Component {
   }
 
   render() {
-    //let counterList = this.getCounterEls();
     return (
       <div>
         <OperHandler />
-        <CounterWrapper />
+        <CounterListWrapper />
       </div>
     );
   }

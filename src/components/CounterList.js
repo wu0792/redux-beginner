@@ -24,16 +24,12 @@ class CounterList extends Component {
             const theCalcVal = calcVal[i];
             const id = theCalcVal.id;
             const val = theCalcVal.val;
-            let counter = React.createElement(Counter, {id: id, onClickDec: onClickDec,onClickInc:onClickInc, key: i, val: val });
+            let counter = React.createElement(Counter, {id: id,min: i, onClickDec: onClickDec,onClickInc:onClickInc, key: i, val: val });
             counterList.push(counter);
         }
         
         return counterList;
     }
 }
-
-// CounterList.propTypes = {
-//     count: React.PropTypes.number.isRequired
-// };
 
 export default CounterList;
