@@ -1,12 +1,12 @@
 import {INC_CALC_VAL,DEC_CALC_VAL,ADD_COUNTER,REMOVE_COUNTER} from '../generic/actionTypes'
 
 //增加或减少计数器的值
-export const incCalcVal = ({
+export const incCalcVal = (id) => ({
     type: INC_CALC_VAL,
     id:id
 });
 
-export const decCalcVal = ({
+export const decCalcVal = (id) => ({
     type: DEC_CALC_VAL,
     id:id
 });
