@@ -1,5 +1,3 @@
-import {applyMiddleWares} from 'redux'
-
 let middleWares = [];
 
 //这里根据需要添加中间件

@@ -1,7 +1,22 @@
-export const incVal = (action) => ({
-    type: 'INC'
+import {INC_CALC_VAL,DEC_CALC_VAL,ADD_COUNTER,REMOVE_COUNTER} from '../generic/actionTypes'
+
+//增加或减少计数器的值
+export const incCalcVal = function(id) {
+    //debugger;
+    return {type: INC_CALC_VAL,id:id};
+};
+
+export const decCalcVal = function(id) {
+    //debugger;
+    return {type: DEC_CALC_VAL,id:id};
+};
+
+
+//添加或移除计数器
+export const addCounter = () => ({
+    type: ADD_COUNTER
 });
 
-export const decVal = (action) => ({
-    type: 'DEC'
+export const removeCounter = () => ({
+    type: REMOVE_COUNTER
 });
