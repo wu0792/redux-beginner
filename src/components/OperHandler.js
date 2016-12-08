@@ -7,7 +7,7 @@ class OperHandler extends Component {
             <div>
                 <button onClick={onClickRemoveCounter}>REMOVE</button>
                 <button onClick={onClickAddCounter}>ADD</button>
-                <label>{count}</label>
+                <label> have {count} counters:</label>
             </div>
         );
     }
